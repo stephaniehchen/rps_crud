@@ -39,6 +39,10 @@ class GamesController < ApplicationController
       @outcome = "You tie"
     end
 
+  def index
+    render("/games/index.html.erb")
+  end
+
     render("/games/play_scissors.html.erb")
   end
 
